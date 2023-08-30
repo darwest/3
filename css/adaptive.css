@@ -1,0 +1,113 @@
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+    .header-menu {
+        font-size: 18px;
+    }
+    .feedback-block-phone {
+        font-size: 36px;
+
+    }
+    .feedback-block-button {
+        font-size: 24px;
+    }
+    .logo-name {
+        line-height: 28px;
+        font-size: 36px;
+    }
+
+    .logo-subname{
+        font-size: 16px;
+    }
+    .logo-image{
+        height: 128px;
+        width: 128px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 510px;
+    }
+    .header-content{
+        height: 170px;
+        width: 100%;
+    }
+    .logo-image {
+        height: 90px;
+        width: 90px;
+    }
+    .logo-name-block{
+        margin:0 0 6px 8px;
+    }
+    .logo-name {
+        line-height: 18px;
+        font-size: 24px;
+        padding: 2px 2px;
+    }
+    .header-flex-container {
+        align-items: flex-start;
+    }
+    .logo-subname{
+        font-size: 14px;
+        padding: 9px 0 0 1px;
+    }
+    .feedback-block-phone {
+        font-size: 22px;
+    }
+    .link-phone{
+        text-decoration: none;
+    }
+    .feedback-block-button{
+        font-size: 14px;
+    }
+    .feedback-link{
+        text-decoration: underline dashed;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 350px;
+    }
+    .header-content{
+        height: 130px;
+        width: 100%;
+    }
+    .header-flex-container {
+        padding-bottom: 0;
+    }
+    .logo-image {
+        height: 60px;
+        width: 60px;
+    }
+    .logo-name-block{
+        margin:0 0 3px 4px;
+    }
+
+    .logo-name {
+        line-height: 14px;
+        font-size: 18px;
+    }
+    .logo-subname{
+        font-size: 8px;
+        padding: 9px 0 0 1px;
+    }
+    .feedback-block-phone {
+        font-size: 16px;
+    }
+    .link-phone{
+        text-decoration: none;
+    }
+    .feedback-block-button{
+        font-size: 11px;
+    }
+    .feedback-link{
+        text-decoration: underline dashed;
+    }
+}
