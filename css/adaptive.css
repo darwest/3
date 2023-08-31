@@ -1,3 +1,12 @@
+@media (max-width: 1600px) {
+
+    .swiper-button-next{
+        margin-right: 210px;
+    }
+    .swiper-button-prev {
+        margin-left: 210px;
+    }
+}
 @media (max-width: 1200px) {
     .container{
         max-width: 970px;
@@ -23,6 +32,15 @@
         height: 130px;
         width: 130px;
     }
+    .slider-container {
+        margin-top: -50px;
+    }
+    .swiper-button-next{
+        margin-right: 120px;
+    }
+    .swiper-button-prev {
+        margin-left: 120px;
+    }
 }
 @media (max-width: 992px) {
     .container{
@@ -30,6 +48,7 @@
     }
     .header-menu {
         font-size: 18px;
+        z-index: 4;
     }
     .feedback-block-phone {
         font-size: 36px;
@@ -48,9 +67,20 @@
         height: 128px;
         width: 128px;
     }
+    .slider-container {
+       margin-top: -50px;
+    }
+    .swiper-button-next{
+        margin-right:90px;
+    }
+    .swiper-button-prev {
+        margin-left: 90px;
+    }
+
 }
 /* Для екранів шириною менше або рівно 768px */
 @media (max-width: 768px) {
+
     .container{
         max-width: 538px;
     }
@@ -93,14 +123,18 @@
         height: 100%;
         background-color: #777777;
         transition: all 0.3s ease 0s;
-
+        z-index: 4;
     }
     .header-menu.active{
         top:0;
         visibility: visible;
         transition: all 0.3s ease 0s; /* Анімація при зміні видимості */
-
+        z-index: 999;
     }
+    .c1{
+        z-index: 1;
+    }
+
     .menu-burger-block{
         display: flex;
         align-items: center;
@@ -139,10 +173,12 @@
     .menu-burger.active:before{
         transform: rotate(45deg);
         top:9px;
+
     }
     .menu-burger.active:after{
         transform: rotate(-45deg);
         bottom: 9px;
+
     }
     .menu-burger.active span{
         transform: scale(0);
@@ -160,6 +196,18 @@
     }
     .menu-item::after {
         display: none;
+    }
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: -280px;
+    }
+    .swiper-button-next{
+        margin-right: 65px;
+    }
+    .swiper-button-prev {
+        margin-left: 65px;
     }
 }
 @media (max-width: 576px){
@@ -223,6 +271,7 @@
     .menu-burger {
         width: 20px;
         height: 15px;
+        z-index: 8;
     }
     .menu-burger:before,.menu-burger:after{
         content: "";
@@ -256,6 +305,23 @@
         display: none;
         padding: 0;
     }
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: -230px;
+    }
+    swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+    }
 
+    .swiper-button-next{
+        margin-right: 30px;
+    }
+    .swiper-button-prev {
+        margin-left: 30px;
+    }
 }
 
