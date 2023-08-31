@@ -91,6 +91,7 @@ body {
     transform: scaleY(1.4);
     transform-origin: center left;
     letter-spacing: 1.8px;
+    font-weight: 300;
 }
 .feedback-block-button {
     margin: 0;
