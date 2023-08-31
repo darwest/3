@@ -2,112 +2,260 @@
     .container{
         max-width: 970px;
     }
-
+    .header-menu {
+        font-size: 26px;
+    }
+    .feedback-block-phone {
+        font-size: 40px;
+    }
+    .feedback-block-button {
+        font-size: 22px;
+    }
+    .logo-name {
+        line-height: 30px;
+        font-size: 38px;
+        margin-bottom: 5px;
+    }
+    .logo-subname{
+        font-size: 18px;
+    }
+    .logo-image{
+        height: 130px;
+        width: 130px;
+    }
 }
 @media (max-width: 992px) {
     .container{
-        max-width: 750px;
+        max-width: 762px;
     }
     .header-menu {
         font-size: 18px;
     }
     .feedback-block-phone {
         font-size: 36px;
-
     }
     .feedback-block-button {
-        font-size: 24px;
+        font-size: 22px;
     }
     .logo-name {
         line-height: 28px;
-        font-size: 36px;
+        font-size: 37px;
     }
-
     .logo-subname{
-        font-size: 16px;
+        font-size: 17px;
     }
     .logo-image{
         height: 128px;
         width: 128px;
     }
 }
+/* Для екранів шириною менше або рівно 768px */
 @media (max-width: 768px) {
     .container{
-        max-width: 510px;
+        max-width: 538px;
     }
-    .header-content{
-        height: 170px;
+    .header-content {
+        height: 180px;
         width: 100%;
+    }
+    .logo-name-block{
+        margin-left:9px;
     }
     .logo-image {
         height: 90px;
         width: 90px;
     }
-    .logo-name-block{
-        margin:0 0 6px 8px;
-    }
     .logo-name {
         line-height: 18px;
-        font-size: 24px;
-        padding: 2px 2px;
-    }
-    .header-flex-container {
-        align-items: flex-start;
+        font-size: 25px;
+        margin: 0;
+        padding-bottom: 14px;
     }
     .logo-subname{
         font-size: 14px;
-        padding: 9px 0 0 1px;
     }
+
     .feedback-block-phone {
         font-size: 22px;
     }
-    .link-phone{
-        text-decoration: none;
+    .feedback-block-button,
+    .feedback-link {
+        position: relative;
+        border-bottom: 1px dashed #767676;
+        font-size: 16px;
+
     }
-    .feedback-block-button{
-        font-size: 14px;
+    .header-menu {
+        visibility: hidden;
+        top:-100%;
+        left:0;
+        width:100%;
+        height: 100%;
+        background-color: #777777;
+        transition: all 0.3s ease 0s;
+
     }
-    .feedback-link{
-        text-decoration: underline dashed;
+    .header-menu.active{
+        top:0;
+        visibility: visible;
+        transition: all 0.3s ease 0s; /* Анімація при зміні видимості */
+
+    }
+    .menu-burger-block{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #777777;
+        height: 50px;
+        z-index: 4;
+    }
+    .menu-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin: 0 auto;
+    }
+    .menu-burger:before,.menu-burger:after{
+        content: "";
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .menu-burger:before{ top:0;}
+    .menu-burger:after{bottom: 0}
+    .menu-burger span{
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .menu-burger.active:before{
+        transform: rotate(45deg);
+        top:9px;
+    }
+    .menu-burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .menu-burger.active span{
+        transform: scale(0);
+    }
+    .menu-ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0 15px 0;
+        padding: 0;
+    }
+    .menu-ul li{
+        margin: 0 0 15px 0;
+        font-size: 20px;
+    }
+    .menu-item::after {
+        display: none;
     }
 }
 @media (max-width: 576px){
     .container{
-        max-width: 350px;
+        max-width: 346px;
     }
     .header-content{
         height: 130px;
         width: 100%;
     }
     .header-flex-container {
-        padding-bottom: 0;
+        align-items: stretch;
+        padding: 0;
     }
     .logo-image {
-        height: 60px;
-        width: 60px;
+        height: 68px;
+        width: 68px;
     }
     .logo-name-block{
-        margin:0 0 3px 4px;
+        margin:0 0 3px 7px;
     }
-
     .logo-name {
         line-height: 14px;
-        font-size: 18px;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 2px 2px;
     }
     .logo-subname{
         font-size: 8px;
-        padding: 9px 0 0 1px;
+        padding: 2px 0 0 1px;
     }
     .feedback-block-phone {
-        font-size: 16px;
-    }
-    .link-phone{
-        text-decoration: none;
+        font-size: 15px;
     }
     .feedback-block-button{
-        font-size: 11px;
+        padding: 0;
     }
-    .feedback-link{
-        text-decoration: underline dashed;
+    .feedback-block-button,
+    .feedback-link {
+        position: relative;
+        border-bottom: 1px dashed #767676;
+        font-size: 10px;
+
     }
+    .header-menu {
+        height: auto;
+    }
+    .menu-item {
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .menu-burger-block{
+        height: 40px;
+    }
+    .header-menu {
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-burger {
+        width: 20px;
+        height: 15px;
+    }
+    .menu-burger:before,.menu-burger:after{
+        content: "";
+        transition: all 0.3s ease 0s;
+    }
+    .menu-burger.active:before{
+        transform: rotate(45deg);
+        top:7px;
+    }
+    .menu-burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 6px;
+    }
+    .menu-burger.active span{
+        transform: scale(0);
+    }
+    .menu-burger span{
+        height: 2px;
+        top: 6.5px;
+        transition: all 0.3s ease 0s;
+    }
+    .menu-ul{
+        margin: 15px 0 15px 0;
+        padding: 0;
+    }
+    .menu-ul li{
+        margin: 0 0 13px 0;
+        font-size: 18px;
+    }
+    .menu-item::after {
+        display: none;
+        padding: 0;
+    }
+
 }
+
