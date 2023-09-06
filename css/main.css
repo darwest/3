@@ -64,7 +64,7 @@ body {
 
 .logo-name {
     line-height: 30px;
-    font-size: 38px;
+    font-size: 40px;
     font-weight: bolder;
     padding: 2px 2px 20px 2px;
     letter-spacing: 0.75px;
@@ -106,6 +106,10 @@ body {
     letter-spacing: 0.8px;
     text-decoration: none;
 }
+.feedback-link{
+    color: #777777;
+    text-decoration: underline dashed;
+}
 .feedback-block-button,
 .feedback-link {
     position: relative;
@@ -124,7 +128,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 3;
 }
 .menu-ul {
     list-style: none;
@@ -171,30 +174,4 @@ body {
     transform: scaleX(1);
 }
 
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-    margin-top: -60px;
-}
 
-.swiper-wrapper {
-    min-height: 100%;
-}
-
-.image-slider {
-    text-align: center; /* Центруємо зображення по горизонталі */
-}
-
-.image-slider img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Зображення буде зберігати співвідношення сторін та розміщуватися по центру контейнера */
-}
-
-.swiper-button-next{
-  margin-right: 400px;
-}
-.swiper-button-prev{
-    margin-left: 400px;
-}
