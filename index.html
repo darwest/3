@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -12,65 +13,283 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <title>3</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>3 макет</title>
 </head>
+
 <body>
-<header class="header">
-    <div class="header-content"><!--Блок в якому знаходиться логотип блок feedback по всій ширині -->
-        <div class="container"><!--Контейнер який обмежує ширину всього вмісту контенту на сайті -->
-            <div class="header-flex-container"><!--Блок  в якому знаходиться логотип блок feedback по ширині контейнера-->
-                <div class="logo-block">
-                    <div class="logo-image-block">
-                        <a href="#"><img src="https://i.imgur.com/e0E5WnP.png" alt="Назва логотипу" class="logo-image"></a>
+<div class="wrapper">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="header-flex-container">
+                    <div class="logo-block">
+                        <div class="logo-image-block">
+                            <a href="#"><img src="img/logo.png" alt="Назва логотипу" class="logo-image"></a>
+                        </div>
+                        <div class="logo-name-block">
+                            <div class="logo-name"><a href="#" class="logo-name-link">Назва</a> <br> <a href="#" class="logo-name-link">компанії</a></div>
+                            <div class="logo-subname"><a href="#" class="logo-name-link">сама класна компанія</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="logo-name-block">
-                        <div class="logo-name"><a href="#" class="logo-name-link">Назва</a> <br> <a href="#" class="logo-name-link">компанії</a></div>
-                        <div class="logo-subname"><a href="#" class="logo-name-link">сама класна компанія</a></div>
+                    <div class="feedback-block">
+                        <div class="feedback-block-phone"><a href="#" class="link-phone">+(380) 77-77-777 </a><br>
+                            <a href="#" class="link-phone">+(380) 77-77-777</a> </div>
+                        <div class="feedback-block-button"><a href="#popup" class="feedback-link">Зворотній
+                            зв'язок</a></div>
                     </div>
-                </div>
-                <div class="feedback-block">
-                    <div class="feedback-block-phone"><a href="#" class="link-phone">+(380) 77-77-777 </a><br> <a href="#" class="link-phone">+(380) 77-77-777</a> </div>
-                    <div class="feedback-block-button"><a href = "#" class="feedback-link">Зворотній зв'язок</a></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="menu-burger-block">
-        <div class="menu-burger">
-        <span></span>
-         </div>
-    </div>
-    <nav class="header-menu">
-        <div class="container">
-            <ul class="menu-ul">
-                <li class="menu-item"><a href="#" class="menu-link">Головна</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Доставка і оплата</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Прайс-лист</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
-            </ul>
+        <!-- MENU -->
+        <div class="menu-burger-block">
+            <div class="menu-burger">
+                <span></span>
+            </div>
         </div>
-    </nav>
-</header>
-<div class="slider-container">
-    <div class="swiper-wrapper">
+        <nav class="header-menu">
+            <div class="container">
+                <ul class="menu-ul">
+                    <li class="menu-item"><a href="#" class="menu-link">Головна</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Каталог</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Доставка і оплата</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Прайс-лист</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--SLIDER-->
+    <div class="slider-container">
+        <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="image-slider">
                     <img src="img/slide1.jpg" alt="Loading">
                 </div>
             </div>
-        <div class="swiper-slide">
-            <div class="image-slider">
-                <img src="img/slide2.jpg" alt="Loading">
+            <div class="swiper-slide">
+                <div class="image-slider">
+                    <img src="img/slide2.jpg" alt="Loading">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div><img src="img/left.jpg" class="swiper-button-prev" alt="Loading"></div>
+        <div><img src="img/right.jpg" class="swiper-button-next" alt="Loading"></div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="container">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs_inner">
+                    <ul class="breadcrumbs_list">
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><span>Побутова техніка</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="left-block">
+                    <div class="sidebar"></div>
+                    <ul class="sidebar-catalog">
+                            <li class="catalog_item"><a href="#" class="link-catalog_item">Автомобілі
+                                <ul class="catalog-list-subitem">
+                                    <li class="catalog_subitem">Легкові автомобілі</li>
+                                    <li class="catalog_subitem">Вантажівки</li>
+                                    <li class="catalog_subitem">Мотоцикли</li>
+                                    <li class="catalog_subitem">Електромобілі</li>
+                                </ul>
+                            </a></li>
+                            <li class="catalog_item"><a href="#" class="link-catalog_item">Побутова техніка
+                                <ul class="catalog-list-subitem">
+                                    <li class="catalog_subitem">Мікрохвильовки</li>
+                                    <li class="catalog_subitem">Холодильники</li>
+                                    <li class="catalog_subitem">Посудомийні машини</li>
+                                    <li class="catalog_subitem">Чайники</li>
+                                </ul>
+                            </a>
+                            </li>
+                            <li class="catalog_item"><a href="#" class="link-catalog_item">Мобільна техніка
+                                <ul class="catalog-list-subitem">
+                                    <li class="catalog_subitem">Смартфони</li>
+                                    <li class="catalog_subitem">Планшети</li>
+                                    <li class="catalog_subitem">Ноутбуки</li>
+                                    <li class="catalog_subitem">Смарт-годинники</li>
+                                </ul>
+                            </a>
+                            </li>
+                            <li class="catalog_item"> <a href="#" class="link-catalog_item">Комп'ютери
+                                <ul class="catalog-list-subitem">
+                                    <li class="catalog_subitem">Настільні комп'ютери</li>
+                                    <li class="catalog_subitem">Ноутбуки</li>
+                                    <li class="catalog_subitem">Принтери та сканери</li>
+                                    <li class="catalog_subitem">Клавіатури та миші</li>
+                                </ul>
+                            </a>
+                            </li>
+                            <li class="catalog_item"><a href="#" class="link-catalog_item">Одяг
+                                <ul class="catalog-list-subitem">
+                                    <li class="catalog_subitem">Верхній одяг</li>
+                                    <li class="catalog_subitem">Світшоти та худі</li>
+                                    <li class="catalog_subitem">Джинси та штани</li>
+                                    <li class="catalog_subitem">Взуття</li>
+                                </ul>
+                            </a>
+                            </li>
+                            <li class="catalog_item"><a href="#" class="link-catalog_item">Нерухомість
+                                <ul class="catalog-list-subitem">
+                                    <li class="catalog_subitem">Квартири</li>
+                                    <li class="catalog_subitem">Будинки</li>
+                                    <li class="catalog_subitem">Земельні ділянки</li>
+                                    <li class="catalog_subitem">Готелі</li>
+                                </ul>
+                            </a>
+                            </li>
+                    </ul>
+                    <div class="logo-price-list">
+                        <img src="img/logo_price-list.jpg" alt="Loading" class="logo-image_price-list">
+                        <p class="logo-name_price-list">Прайс-лист</p>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="catalog-block">
+                        <div class="goods-block">
+                            <img src="img/nophoto.jpg" alt="Loading" class="photo-good">
+                            <a href="#" class="name-good-link">
+                                <p class="name-good">Самий класний чайник, який потрібно купити!</p>
+                            </a>
+                            <p class="price-good">1 900 грн.</p>
+                            <div class="icon-buy-button"><a href="#"><img src="img/icon_buy.svg"
+                                                                          class="icon-buy" alt="Loading"></a></div>
+                        </div>
+                        <div class="goods-block">
+                            <img src="img/nophoto.jpg" alt="Loading" class="photo-good">
+                            <a href="#" class="name-good-link">
+                                <p class="name-good">Самий класний чайник, який потрібно купити!</p>
+                            </a>
+                            <p class="price-good">1 900 грн.</p>
+                            <div class="icon-buy-button"><a href="#"><img src="img/icon_buy.svg"
+                                                                          class="icon-buy" alt="Loading"></a></div>
+                        </div>
+                        <div class="goods-block">
+                            <img src="img/nophoto.jpg" alt="Loading" class="photo-good">
+                            <a href="#" class="name-good-link">
+                                <p class="name-good">Самий класний чайник, який потрібно купити!</p>
+                            </a>
+                            <p class="price-good">1 900 грн.</p>
+                            <div class="icon-buy-button"><a href="#"><img src="img/icon_buy.svg"
+                                                                          class="icon-buy" alt="Loading"></a></div>
+                        </div>
+                        <div class="goods-block">
+                            <img src="img/nophoto.jpg" alt="Loading" class="photo-good">
+                            <a href="#" class="name-good-link">
+                                <p class="name-good">Самий класний чайник, який потрібно купити!</p>
+                            </a>
+                            <p class="price-good">1 900 грн.</p>
+                            <div class="icon-buy-button"><a href="#"><img src="img/icon_buy.svg"
+                                                                          class="icon-buy" alt="Loading"></a></div>
+                        </div>
+                        <div class="goods-block">
+                            <img src="img/nophoto.jpg" alt="Loading" class="photo-good">
+                            <a href="#" class="name-good-link">
+                                <p class="name-good">Самий класний чайник, який потрібно купити!</p>
+                            </a>
+                            <p class="price-good">1 900 грн.</p>
+                            <div class="icon-buy-button"><a href="#"><img src="img/icon_buy.svg"
+                                                                          class="icon-buy" alt="Loading"></a></div>
+                        </div>
+                    </div>
+                    <div class="catalog-pagination">
+                        <p class="catalog-pagination-number">1</p>
+                        <p class="catalog-pagination-number">2</p>
+                        <p class="catalog-pagination-number"><span>3</span></p>
+                        <p class="catalog-pagination-number">4</p>
+                        <p class="catalog-pagination-number">5</p>
+                        <p class="catalog-pagination-number">6</p>
+                        <p class="catalog-pagination-number">7</p>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="catalog-description-block">
+                        <div class="description-text">Компанія «Піксель Плюс» існує понад 6 років, за цей час ми
+                            брали участь у розробці більш як 700 сайтів, тому можемо впевнено називати себе
+                            професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників,
+                            що працюють у офісах України. Характерні для цього жанру мотиви: нерозділеного кохання,
+                            догляду молодості, згасання душі.</div>
+                        <div class="description-text">Одним із основних напрямків робіт нашої компанії є пошукове
+                            просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами за
+                            більш ніж 11 000 пошуковими запитами. При цьому в роботі основний акцент ми робимо на
+                            якості робіт, а також застосовуємо власні унікальні розробки в галузі SEO просування. На
+                            даний момент відділ SEO складається з 9 осіб під керівництвом провідного спеціаліста,
+                            які переважно працюють у нашому українському офісі.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FEEDBACK-->
+<div id="popup" class="popup">
+    <a href="#" class="popup_area"></a>
+    <div class="pop-block">
+        <a href="#" class="popup-close"><img src="img/icon_close.svg" alt="Loading"></a>
+        <div class="popup-body">
+            <div class="popup-content">
+                <div class="popup-title">ЗВОРОТНІЙ ЗВ'ЯЗОК</div>
+                <form id="feedback-form">
+                    <div class="popup-info">
+                        <label for="name-input">Ваше ім'я *</label><br>
+                        <input type="text" name="login" class="form-input-text" id="name-input" placeholder="Дмитро"><br>
+
+                        <label for="phone-input">Телефон *</label><br>
+                        <input type="text" name="number" class="form-input-text" id="phone-input" placeholder="380687667786"><br>
+
+                        <label for="email-input">Email *</label><br>
+                        <input type="text" name="email" class="form-input-text" id="email-input" placeholder="example@example.com"><br>
+
+                        <label for="message-input">Повідомлення</label><br>
+                        <textarea class="form-textarea" id="message-input"></textarea>
+                        <br>
+                        <input type="submit" value="ВІДПРАВИТИ" class="form-button" id="submit-button">
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-flex-container">
+                <div class="footer-block-info-company">© 2012–2013 ЗАО «Компания» info@name.ua</div>
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Головна</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Каталог</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Доставка і оплата</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block-info-dev"><img src="img/logo_companydev.svg" class="logo-company-dev" alt="Loading"><span><a href="#" class="logo-company-dev-link">Разработка сайта</a> — компания «Пиксель Плюс»</span></div>
             </div>
         </div>
     </div>
 
-    <div class="c1"><img src="img/left.jpg" class="swiper-button-prev"></div>
-    <div><img src="img/right.jpg" class="swiper-button-next"></div>
+</footer>
+
 </div>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
+
 </html>
