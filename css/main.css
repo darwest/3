@@ -536,6 +536,10 @@ input.invalid::placeholder {
     width: 36px;
     height: 38px;
 }
+.email-company{
+    color: #ffffff;
+    text-decoration: none;
+}
 .footer-menu{
     width: 130px;
     color: #ffffff;
